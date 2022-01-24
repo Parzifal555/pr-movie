@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Movies</title>
+    </head>
+    <body>
+        <input type="text" id="name">
+        <div>
+            <button onclick="StartApi(main.js)">Поиск</button>
+        </div>
+        <div Style="color: red;"id="sales" > <input type="button" value="О разработчике" onclick="buy()" /></div>
+<script>
+var sales_div = document.getElementById("sales");
+function buy(){
+sales.innerHTML = 'Мехтиев Эльнур<br> 815 гр. <br> 24.01.2022 <br> https://rapidapi.com/apidojo/api/imdb8/ <input type="button" value="Назад" onclick="cancel()" color: red/>';
+}
+
+function cancel(){
+sales.innerHTML = ' <input type="button" value="О разработчике" onclick="buy()" />';
+}
+
+</script>
+
+        <div class="movies"></div>
+        <script src="main.js"></script>
+    </body>
+</html>
